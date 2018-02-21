@@ -1,9 +1,8 @@
 require_relative('models/student.rb')
-
-
-
 require('pry-byebug')
 
+
+Student.delete_all()
 student1 = Student.new({ 'first_name' => 'Pedro', 'second_name' => 'Galvez', 'house' => 'Quinta5', 'age' => 24})
 student1.save()
 
