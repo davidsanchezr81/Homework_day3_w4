@@ -22,6 +22,9 @@ class Student
     return "#{@house}"
   end
   #
+  def status()
+    return "FULLY ENROLLED"
+  end
   def save()
     sql = "INSERT INTO students
     (

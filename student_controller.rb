@@ -10,7 +10,11 @@ get '/student' do
 end
 
 post '/student' do
-  @order = PizzaOrder.new( params )
-  @order.save()
+  @grades = Student.new( params )
+  @grades.save()
   erb(:create) #create es el confirmation page por haber comprado la pizza
+end
+
+get '/student/new' do # esto solo te abre (render) el website del form para rellenar
+  erb(:new)
 end
